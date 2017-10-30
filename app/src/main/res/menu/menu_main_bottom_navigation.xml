@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_main"
+        android:icon="@drawable/ic_main_black_24dp"
+        android:title="@string/prompt_navigation_main"/>
+
+    <item
+        android:id="@+id/navigation_discover"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="@string/prompt_navigation_explore"/>
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/ic_me_black_24dp"
+        android:title="@string/prompt_navigation_me"/>
+
+</menu>

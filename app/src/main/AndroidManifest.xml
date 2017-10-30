@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.rumofuture.nemolite">
+
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.rumofuture.nemolite.app.NemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoStartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyBookCreateActivity"
+            android:label="@string/title_activity_my_book_create"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyBookPageListActivity"
+            android:label="@string/title_activity_my_book_page_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyBookListActivity"
+            android:label="@string/title_activity_my_book_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoLogInActivity"
+            android:label="@string/title_activity_nemo_log_in"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyBlogActivity"
+            android:label="@string/title_activity_my_blog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyInfoEditActivity"
+            android:label="@string/title_activity_my_info_edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoAuthorBlogActivity"
+            android:label="@string/title_activity_nemo_author_blog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MySettingListActivity"
+            android:label="@string/title_activity_my_setting_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoBookPageListActivity"
+            android:label="@string/title_activity_nemo_book_page_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoBookInfoActivity"
+            android:label="@string/title_activity_nemo_book_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoAuthorBookInfoActivity"
+            android:label="@string/title_activity_nemo_book_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoSignUpActivity"
+            android:label="@string/title_activity_nemo_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyPasswordUpdateActivity"
+            android:label="@string/title_activity_my_password_update"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.NemoPasswordUpdateActivity"
+            android:label="@string/title_activity_nemo_password_update"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyProfileEditActivity"
+            android:label="@string/title_activity_my_profile_edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.rumofuture.nemolite.view.activity.MyBookInfoActivity"
+            android:label="@string/title_activity_my_book_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+</manifest>

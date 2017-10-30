@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorWhite">#FFFFFF</color>  <!-- 正白色 -->
+    <color name="colorOrange">#FFA500</color>  <!-- 橙色 -->
+    <color name="colorRed">#FF0000</color>  <!-- 正红色 -->
+    <color name="colorGainsboro">#DCDCDC</color>  <!-- 淡灰色 -->
+    <color name="colorSilver">#C0C0C0</color>  <!-- 银色 -->
+    <color name="colorDarkGray">#A9A9A9</color>  <!-- 暗灰色 -->
+    <color name="colorBlack">#000000</color>  <!-- 正黑色 -->
+</resources>

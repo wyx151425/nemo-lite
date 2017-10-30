@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_light_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_light_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_light_margin"
+        android:layout_marginTop="@dimen/activity_vertical_light_margin"
+        android:background="@color/colorWhite"
+        app:cardCornerRadius="@dimen/card_elevation"
+        app:cardElevation="@dimen/card_elevation">
+        <!--app:cardPreventCornerOverlap="true"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_middle_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_middle_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_middle_margin"
+            android:layout_marginTop="@dimen/activity_vertical_middle_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/book_cover_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/background"
+                android:contentDescription="@string/prompt_book_cover"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_marginStart="@dimen/activity_horizontal_middle_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/book_name_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/nemo_text_middle_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_vertical_light_margin"/>
+
+                <TextView
+                    android:id="@+id/book_introduction_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/line_spacing_extra"
+                    android:maxLines="3"
+                    android:textSize="@dimen/nemo_text_small_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_vertical_middle_margin"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@mipmap/ic_camera_silver_fab"
+                        android:contentDescription="@string/prompt_book_style"/>
+
+                    <TextView
+                        android:id="@+id/book_style_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_min_margin"
+                        android:textColor="@color/colorSilver"
+                        android:textSize="@dimen/nemo_text_more_small_size"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorSilver"/>
+</LinearLayout>

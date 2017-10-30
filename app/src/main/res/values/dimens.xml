@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_middle_margin">12dp</dimen>
+    <dimen name="activity_vertical_middle_margin">12dp</dimen>
+
+    <dimen name="activity_horizontal_light_margin">8dp</dimen>
+    <dimen name="activity_vertical_light_margin">8dp</dimen>
+
+    <dimen name="activity_horizontal_min_margin">4dp</dimen>
+    <dimen name="activity_vertical_min_margin">4dp</dimen>
+
+    <dimen name="nemo_light_margin">8dp</dimen>
+    <dimen name="nemo_more_light_margin">4dp</dimen>
+    <dimen name="nemo_most_light_margin">2dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="activity_title_nemo_size">20sp</dimen>
+    <dimen name="activity_title_standred_size">18sp</dimen>
+    <dimen name="nemo_button_text_size">18sp</dimen>
+    <dimen name="nemo_button_text_standred_size">18sp</dimen>
+
+    <dimen name="nemo_text_max_size">20sp</dimen>
+    <dimen name="nemo_text_big_size">18sp</dimen>
+    <dimen name="nemo_text_standard_size">16sp</dimen>
+    <dimen name="nemo_text_middle_size">15sp</dimen>
+    <dimen name="nemo_text_small_size">14sp</dimen>
+    <dimen name="nemo_text_more_small_size">13sp</dimen>
+    <dimen name="nemo_text_min_size">12sp</dimen>
+
+    <dimen name="app_bar_height">420dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="nemo_text_title_size">30sp</dimen>
+    <dimen name="my_blog_title_margin">16dp</dimen>
+    <dimen name="my_info_layout_bottom_margin">0dp</dimen>
+    <dimen name="my_blog_circle_image_view_width">120dp</dimen>
+    <dimen name="line_spacing_extra">4dp</dimen>
+    <dimen name="circle_image_view_border_width">2dp</dimen>
+
+    <dimen name="nemo_main_me_circle_image_view_width">72dp</dimen>
+
+    <dimen name="toolbar_height">48dp</dimen>
+
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="fab_elevation">5dp</dimen>
+</resources>

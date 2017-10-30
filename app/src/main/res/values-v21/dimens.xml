@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="my_blog_title_margin">12dp</dimen>
+    <dimen name="my_info_layout_bottom_margin">16dp</dimen>
+</resources>

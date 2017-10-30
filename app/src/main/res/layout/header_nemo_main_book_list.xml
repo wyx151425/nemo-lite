@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/originality"
+                android:contentDescription="@string/prompt_book_cover"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="8:5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="96dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="32dp"
+            android:alpha="0.75"
+            android:background="@color/colorWhite"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/nemo_text_standard_size"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_min_margin"
+                    android:text="@string/app_motto"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/nemo_text_min_size"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/activity_vertical_light_margin"
+                    android:background="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_min_margin"
+                    android:text="@string/app_creator"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/nemo_text_min_size"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorSilver"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_vertical_light_margin"/>
+</LinearLayout>

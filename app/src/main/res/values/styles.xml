@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- 取消Toolbar的悬浮效果 -->
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">-->
+    <!--<item name="elevation">0dp</item>-->
+    <!--</style>-->
+
+    <!-- 显示Menu下拉时的分割线 -->
+    <style name="AppMenuDropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:showDividers">middle</item>
+        <item name="android:divider">@color/colorSilver</item>
+        <item name="android:dividerHeight">0.1dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:dropDownListViewStyle">@style/AppMenuDropDownListViewStyle</item>
+    </style>
+
+    <style name="Toolbar.NemoText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/activity_title_nemo_size</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/activity_title_standred_size</item>
+    </style>
+
+</resources>

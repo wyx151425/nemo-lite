@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/book_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_light_margin"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorSilver"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_middle_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_middle_margin">
+
+        <ImageView
+            android:id="@+id/author_avatar_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/ic_face_black_round"
+            android:contentDescription="@string/prompt_user_avatar"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_middle_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/author_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/nemo_text_standard_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_vertical_light_margin"/>
+
+            <TextView
+                android:id="@+id/author_motto_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/line_spacing_extra"
+                android:maxLines="3"
+                android:textSize="@dimen/nemo_text_small_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_vertical_middle_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@mipmap/ic_satellite_silver_fab"
+                    android:contentDescription="@string/prompt_book_style"/>
+
+                <TextView
+                    android:id="@+id/author_book_total_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_min_margin"
+                    android:textColor="@color/colorSilver"
+                    android:textSize="@dimen/nemo_text_more_small_size"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorSilver"/>
+</LinearLayout>

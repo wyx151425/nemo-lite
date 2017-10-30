@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.rumofuture.nemolite.view.activity.MyBlogActivity">
+
+    <item
+        android:id="@+id/action_update_avatar"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_face_black_none"
+        android:title="@string/action_update_avatar"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_update_portrait"
+        android:icon="@mipmap/ic_account_circle_black_none"
+        android:orderInCategory="100"
+        android:title="@string/action_update_portrait"
+        app:showAsAction="never"/>
+</menu>
