@@ -44,9 +44,4 @@ public interface UserDataSource {
         void onUserListGetSuccess(List<User> userList);
         void onUserListGetFailed(BmobException e);
     }
-
-    interface TotalGetCallback {
-        void onTotalGetSuccess(Integer total);
-        void onTotalGetFailed(BmobException e);
-    }
 }

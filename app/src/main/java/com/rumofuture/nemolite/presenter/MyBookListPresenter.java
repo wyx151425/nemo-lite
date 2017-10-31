@@ -10,6 +10,7 @@ import com.rumofuture.nemolite.model.source.BookDataSource;
 import com.rumofuture.nemolite.model.source.UserDataSource;
 
 import java.util.List;
+import java.util.Objects;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
@@ -104,8 +105,10 @@ public class MyBookListPresenter implements MyBookListContract.Presenter, UserDa
     @Override
     public void onTotalGetSuccess(Integer total) {
         User currentUser = BmobUser.getCurrentUser(User.class);
-        currentUser.setBookTotal(total);
-        mUserRepository.updateUserInfo(currentUser, this);
+        if (!Objects.equals(currentUser.getBookTotal(), total)) {
+            currentUser.setBookTotal(total);
+            mUserRepository.updateUserInfo(currentUser, this);
+        }
     }
 
     @Override

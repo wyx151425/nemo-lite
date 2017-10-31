@@ -15,6 +15,7 @@ import com.smile.filechoose.api.ChosenImage;
 
 import java.io.File;
 import java.util.List;
+import java.util.Objects;
 
 import cn.bmob.v3.datatype.BmobFile;
 import cn.bmob.v3.exception.BmobException;
@@ -213,8 +214,10 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
 
     @Override
     public void onTotalGetSuccess(Integer total) {
-        mBook.setPageTotal(total);
-        mBookRepository.updateBook(mBook, null, this);
+        if (!Objects.equals(mBook.getPageTotal(), total)) {
+            mBook.setPageTotal(total);
+            mBookRepository.updateBook(mBook, null, this);
+        }
     }
 
     @Override
