@@ -41,7 +41,7 @@ public class NemoAuthorBlogListAdapter extends RecyclerView.Adapter<RecyclerView
             View view = LayoutInflater.from(mContext).inflate(R.layout.item_nemo_author_info, parent, false);
             return new AuthorViewHolder(view);
         } else {
-            View view = LayoutInflater.from(mContext).inflate(R.layout.item_nemo_book_list, parent, false);
+            View view = LayoutInflater.from(mContext).inflate(R.layout.item_nemo_author_book_list, parent, false);
             final BookViewHolder holder = new BookViewHolder(view);
 
             holder.mBookInfoContainer.setOnClickListener(new View.OnClickListener() {

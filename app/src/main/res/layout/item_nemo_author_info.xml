@@ -14,8 +14,8 @@
         android:layout_marginEnd="@dimen/activity_horizontal_light_margin"
         android:layout_marginStart="@dimen/activity_horizontal_light_margin"
         android:layout_marginTop="@dimen/activity_vertical_light_margin"
-        app:cardCornerRadius="2dp"
-        app:cardElevation="2dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="1dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <TextView
