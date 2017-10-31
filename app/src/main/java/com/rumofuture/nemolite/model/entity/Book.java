@@ -3,10 +3,6 @@ package com.rumofuture.nemolite.model.entity;
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.datatype.BmobFile;
 
-/**
- * Created by WangZhenqi on 2016/12/24.
- */
-
 public class Book extends BmobObject {
 
     private User author;  // 所属漫画作者

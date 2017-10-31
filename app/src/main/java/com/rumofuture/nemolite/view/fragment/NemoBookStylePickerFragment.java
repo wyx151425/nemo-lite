@@ -18,7 +18,7 @@ import com.rumofuture.nemolite.R;
 
 public class NemoBookStylePickerFragment extends DialogFragment {
 
-    public static final String EXTRA_STYLE = "com.rumofuture.nemo.view.fragment.NemoBookStylePickerFragment.mStyle";
+    public static final String EXTRA_STYLE = "com.rumofuture.nemolite.view.fragment.NemoBookStylePickerFragment.mStyle";
 
     public String mStyle;
     public View mPreviousFocusedView;

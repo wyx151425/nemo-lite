@@ -27,7 +27,7 @@ import static android.app.Activity.RESULT_OK;
 
 public class MyBookCreateFragment extends Fragment implements MyBookCreateContract.View {
 
-    public static final String EXTRA_BOOK = "com.rumofuture.nemo.view.fragment.MyBookCreateFragment.book";
+    public static final String EXTRA_BOOK = "com.rumofuture.nemolite.view.fragment.MyBookCreateFragment.book";
 
     private MyBookCreateContract.Presenter mPresenter;
 

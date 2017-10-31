@@ -13,7 +13,7 @@ import com.rumofuture.nemolite.R;
 
 public class NemoProgressBarFragment extends DialogFragment {
 
-    private static final String ARG_PROMPT = "com.rumofuture.nemo.view.fragment.NemoProgressBarFragment.prompt";
+    private static final String ARG_PROMPT = "com.rumofuture.nemolite.view.fragment.NemoProgressBarFragment.prompt";
 
     public NemoProgressBarFragment() {
 

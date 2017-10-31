@@ -3,10 +3,6 @@ package com.rumofuture.nemolite.model.entity;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.datatype.BmobFile;
 
-/**
- * Created by WangZhenqi on 2016/12/24.
- */
-
 public class User extends BmobUser {
 
     private String name;  // 姓名

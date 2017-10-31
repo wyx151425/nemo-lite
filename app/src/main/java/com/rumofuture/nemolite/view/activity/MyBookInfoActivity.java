@@ -14,7 +14,7 @@ import com.rumofuture.nemolite.view.fragment.MyBookInfoFragment;
 
 public class MyBookInfoActivity extends NemoActivity {
 
-    private static final String EXTRA_BOOK = "com.rumofuture.nemo.view.activity.MyBookInfoActivity.book";
+    private static final String EXTRA_BOOK = "com.rumofuture.nemolite.view.activity.MyBookInfoActivity.book";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

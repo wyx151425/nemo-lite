@@ -16,10 +16,6 @@ import cn.bmob.v3.listener.SaveListener;
 import cn.bmob.v3.listener.UpdateListener;
 import cn.bmob.v3.listener.UploadFileListener;
 
-/**
- * Created by WangZhenqi on 2017/4/15.
- */
-
 public class PageRemoteDataSource implements PageDataSource {
 
     private static final int PAGE_LIMIT = 64;

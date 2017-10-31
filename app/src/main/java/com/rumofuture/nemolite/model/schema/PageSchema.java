@@ -1,9 +1,5 @@
 package com.rumofuture.nemolite.model.schema;
 
-/**
- * Created by WangZhenqi on 2017/2/7.
- */
-
 public class PageSchema {
 
     public static final class Table {

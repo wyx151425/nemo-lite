@@ -16,8 +16,8 @@ import com.rumofuture.nemolite.R;
 
 public class NemoGenderPickerFragment extends DialogFragment {
 
-    public static final String EXTRA_GENDER = "com.rumofuture.nemo.view.fragment.NemoDatePickerFragment.gender";
-    private static final String ARG_GENDER = "com.rumofuture.nemo.view.fragment.NemoDatePickerFragment.gender";
+    public static final String EXTRA_GENDER = "com.rumofuture.nemolite.view.fragment.NemoDatePickerFragment.gender";
+    private static final String ARG_GENDER = "com.rumofuture.nemolite.view.fragment.NemoDatePickerFragment.gender";
 
     private NumberPicker mNumberPicker;
 

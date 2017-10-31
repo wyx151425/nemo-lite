@@ -27,7 +27,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class NemoAuthorBlogActivity extends NemoActivity {
 
-    private static final String EXTRA_AUTHOR = "com.rumofuture.nemo.view.activity.NemoAuthorBlogActivity.author";
+    private static final String EXTRA_AUTHOR = "com.rumofuture.nemolite.view.activity.NemoAuthorBlogActivity.author";
 
     // 控制ToolBar的变量
     private static final float PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR = 0.9f;

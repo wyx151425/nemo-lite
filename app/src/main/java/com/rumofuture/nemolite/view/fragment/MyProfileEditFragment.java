@@ -23,8 +23,8 @@ import static android.app.Activity.RESULT_OK;
 
 public class MyProfileEditFragment extends Fragment implements MyInfoUpdateContract.View {
 
-    private static final String ARG_PROFILE = "com.rumofuture.nemo.view.fragment.MyProfileEditFragment.profile";
-    public static final String EXTRA_PROFILE = "com.rumofuture.nemo.view.fragment.MyProfileEditFragment.profile";
+    private static final String ARG_PROFILE = "com.rumofuture.nemolite.view.fragment.MyProfileEditFragment.profile";
+    public static final String EXTRA_PROFILE = "com.rumofuture.nemolite.view.fragment.MyProfileEditFragment.profile";
 
     private MyInfoUpdateContract.Presenter mPresenter;
 

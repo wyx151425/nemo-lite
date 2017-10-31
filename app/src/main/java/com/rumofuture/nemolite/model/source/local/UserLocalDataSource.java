@@ -7,10 +7,6 @@ import com.rumofuture.nemolite.model.source.UserDataSource;
 
 import cn.bmob.v3.datatype.BmobFile;
 
-/**
- * Created by WangZhenqi on 2017/4/16.
- */
-
 public class UserLocalDataSource implements UserDataSource {
 
     private Context mContext;

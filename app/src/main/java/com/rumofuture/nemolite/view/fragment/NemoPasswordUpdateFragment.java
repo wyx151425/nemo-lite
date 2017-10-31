@@ -43,11 +43,11 @@ public class NemoPasswordUpdateFragment extends Fragment implements NemoPassword
 
         View view = inflater.inflate(R.layout.fragment_nemo_password_update, container, false);
 
-        mMobilePhoneNumberView = (EditText) view.findViewById(R.id.user_mobile_phone_number_view);
-        mPasswordView = (EditText) view.findViewById(R.id.new_password_view);
-        mSMSCodeView = (EditText) view.findViewById(R.id.sms_code_view);
+        mMobilePhoneNumberView = view.findViewById(R.id.user_mobile_phone_number_view);
+        mPasswordView = view.findViewById(R.id.new_password_view);
+        mSMSCodeView = view.findViewById(R.id.sms_code_view);
 
-        mSMSCodeRequestView = (TextView) view.findViewById(R.id.sms_code_request_view);
+        mSMSCodeRequestView = view.findViewById(R.id.sms_code_request_view);
         mSMSCodeRequestView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,7 +55,7 @@ public class NemoPasswordUpdateFragment extends Fragment implements NemoPassword
             }
         });
 
-        Button passwordModifyButton = (Button) view.findViewById(R.id.password_update_button);
+        Button passwordModifyButton = view.findViewById(R.id.password_update_button);
         passwordModifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

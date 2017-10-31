@@ -24,8 +24,8 @@ import java.util.Locale;
 
 public class NemoDatePickerFragment extends DialogFragment {
 
-    public static final String EXTRA_DATE_STRING = "com.rumofuture.nemo.view.fragment.NemoDatePickerFragment.dateString";
-    private static final String ARG_DATE_STRING = "com.rumofuture.nemo.view.fragment.NemoDatePickerFragment.dateString";
+    public static final String EXTRA_DATE_STRING = "com.rumofuture.nemolite.view.fragment.NemoDatePickerFragment.dateString";
+    private static final String ARG_DATE_STRING = "com.rumofuture.nemolite.view.fragment.NemoDatePickerFragment.dateString";
 
     private Date mDate;
     private DateFormat mDateFormat;

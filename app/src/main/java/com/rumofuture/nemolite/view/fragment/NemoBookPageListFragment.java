@@ -25,7 +25,7 @@ import cn.bmob.v3.exception.BmobException;
 
 public class NemoBookPageListFragment extends Fragment implements NemoBookPageListContract.View {
 
-    private static final String ARG_BOOK = "com.rumofuture.nemo.view.fragment.NemoBookPageListFragment.book";
+    private static final String ARG_BOOK = "com.rumofuture.nemolite.view.fragment.NemoBookPageListFragment.book";
 
     private NemoBookPageListContract.Presenter mPresenter;
 

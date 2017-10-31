@@ -9,10 +9,6 @@ import com.rumofuture.nemolite.model.source.BookDataSource;
 
 import cn.bmob.v3.datatype.BmobFile;
 
-/**
- * Created by WangZhenqi on 2017/4/13.
- */
-
 public class BookLocalDataSource implements BookDataSource {
 
     private static BookLocalDataSource sInstance;

@@ -8,10 +8,6 @@ import com.rumofuture.nemolite.model.source.PageDataSource;
 
 import cn.bmob.v3.datatype.BmobFile;
 
-/**
- * Created by WangZhenqi on 2017/4/15.
- */
-
 public class PageLocalDataSource implements PageDataSource {
 
     private static PageLocalDataSource sInstance;

@@ -25,7 +25,7 @@ import cn.bmob.v3.exception.BmobException;
 
 public class NemoAuthorBlogFragment extends Fragment implements NemoAuthorBlogContract.View {
 
-    private static final String ARG_AUTHOR = "com.rumofuture.nemo.view.fragment.NemoAuthorBlogFragment.author";
+    private static final String ARG_AUTHOR = "com.rumofuture.nemolite.view.fragment.NemoAuthorBlogFragment.author";
 
     private NemoAuthorBlogContract.Presenter mPresenter;
 

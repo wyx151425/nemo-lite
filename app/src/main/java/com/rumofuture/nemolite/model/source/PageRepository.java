@@ -7,10 +7,6 @@ import com.rumofuture.nemolite.model.entity.Page;
 
 import cn.bmob.v3.datatype.BmobFile;
 
-/**
- * Created by WangZhenqi on 2017/4/15.
- */
-
 public class PageRepository implements PageDataSource {
 
     private static PageRepository sInstance;

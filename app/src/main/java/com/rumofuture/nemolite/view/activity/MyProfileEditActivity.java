@@ -15,7 +15,7 @@ import com.rumofuture.nemolite.view.fragment.MyProfileEditFragment;
 
 public class MyProfileEditActivity extends NemoActivity {
 
-    private static final String EXTRA_PROFILE = "com.rumofuture.nemo.view.activity.MyProfileEditActivity.profile";
+    private static final String EXTRA_PROFILE = "com.rumofuture.nemolite.view.activity.MyProfileEditActivity.profile";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

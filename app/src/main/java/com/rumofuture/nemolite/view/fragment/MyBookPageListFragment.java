@@ -30,7 +30,7 @@ import static android.app.Activity.RESULT_OK;
 
 public class MyBookPageListFragment extends Fragment implements MyBookPageListContract.View {
 
-    private static final String ARG_PARAM = "com.rumofuture.wzq.nemo.view.fragment.MyBookPageListFragment.book";
+    private static final String ARG_PARAM = "com.rumofuture.nemolite.view.fragment.MyBookPageListFragment.book";
 
     private NemoProgressBarFragment mProgressBar;
     private SwipeRefreshLayout mSwipeRefreshLayout;

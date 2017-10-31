@@ -19,7 +19,7 @@ import com.rumofuture.nemolite.view.activity.NemoBookPageListActivity;
 
 public class NemoBookInfoFragment extends Fragment {
 
-    private static final String ARG_BOOK = "com.rumofuture.nemo.view.fragment.NemoBookInfoFragment.book";
+    private static final String ARG_BOOK = "com.rumofuture.nemolite.view.fragment.NemoBookInfoFragment.book";
 
     private Book mBook;
 
