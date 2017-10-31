@@ -110,9 +110,6 @@
     <string name="prompt_creating">正在创建</string>
     <string name="prompt_create_success">创建成功</string>
     <string name="prompt_create_failed">创建失败</string>
-    <string name="prompt_binding">正在绑定</string>
-    <string name="prompt_bind_success">绑定成功</string>
-    <string name="prompt_bind_failed">绑定失败</string>
     <string name="prompt_saving">正在保存</string>
     <string name="prompt_save_success">保存成功</string>
     <string name="prompt_save_failed">保存失败</string>
@@ -124,6 +121,9 @@
     <string name="prompt_updating">正在更新</string>
     <string name="prompt_update_success">更新成功</string>
     <string name="prompt_update_failed">更新失败</string>
+    <string name="prompt_uploading">正在上传</string>
+    <string name="prompt_upload_success">上传成功</string>
+    <string name="prompt_upload_failed">上传失败</string>
 
     <string name="action_update_avatar">修改头像</string>
     <string name="action_update_portrait">修改肖像</string>

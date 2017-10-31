@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 
+import com.rumofuture.nemolite.R;
 import com.rumofuture.nemolite.app.contract.MyBookPageListContract;
 import com.rumofuture.nemolite.app.manager.ImageChooseManager;
 import com.rumofuture.nemolite.model.entity.Book;
@@ -71,11 +72,12 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
                 // 如果请求码为2，则将进行的是漫画分页更新操作
                 if (mView.isActive()) {
                     final BmobFile newImage = new BmobFile(new File(mPageImage.getFilePathOriginal()));
-                    mView.showProgressBar(true);
                     if (UPLOAD_PAGE_REQUEST_CODE == requestCode) {
+                        mView.showProgressBar(true, R.string.prompt_uploading);
                         mPage.setImage(newImage);
                         mPageRepository.savePage(mPage, MyBookPageListPresenter.this);
                     } else if (UPDATE_PAGE_REQUEST_CODE == requestCode) {
+                        mView.showProgressBar(true, R.string.prompt_updating);
                         mPageRepository.updatePage(mPage, newImage, MyBookPageListPresenter.this);
                     }
                 }
@@ -113,6 +115,7 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
 
     @Override
     public void deletePage(Page page) {
+        mView.showProgressBar(true, R.string.prompt_deleting);
         mPageRepository.deletePage(page, this);
     }
 
@@ -128,14 +131,14 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
     public void getBookPageList(Book book, int pageCode) {
         mBook = book;
         mPageRepository.getPageListByBook(mBook, pageCode, this);
-        mPageRepository.getPageTotal(mBook, this);
+        mPageRepository.getBookPageTotal(mBook, this);
     }
 
     @Override
     public void onPageSaveSuccess(Page page) {
         if (mView.isActive()) {
             mView.showPageSaveSuccess(page);
-            mView.showProgressBar(false);
+            mView.showProgressBar(false, 0);
         }
 
         mBook.increment(BookSchema.Table.Cols.PAGE_TOTAL);
@@ -146,7 +149,7 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
     public void onPageSaveFailed(BmobException e) {
         if (mView.isActive()) {
             mView.showPageSaveFailed(e);
-            mView.showProgressBar(false);
+            mView.showProgressBar(false, 0);
         }
     }
 
@@ -154,7 +157,7 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
     public void onPageDeleteSuccess(Page page) {
         if (mView.isActive()) {
             mView.showPageDeleteSuccess(page);
-            mView.showProgressBar(false);
+            mView.showProgressBar(false, 0);
         }
 
         mBook.increment(BookSchema.Table.Cols.PAGE_TOTAL, -1);
@@ -165,7 +168,7 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
     public void onPageDeleteFailed(BmobException e) {
         if (mView.isActive()) {
             mView.showPageDeleteFailed(e);
-            mView.showProgressBar(false);
+            mView.showProgressBar(false, 0);
         }
     }
 
@@ -173,7 +176,7 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
     public void onPageUpdateSuccess(Page page) {
         if (mView.isActive()) {
             mView.showPageUpdateSuccess(page);
-            mView.showProgressBar(false);
+            mView.showProgressBar(false, 0);
         }
     }
 
@@ -181,7 +184,7 @@ public class MyBookPageListPresenter implements MyBookPageListContract.Presenter
     public void onPageUpdateFailed(BmobException e) {
         if (mView.isActive()) {
             mView.showPageUpdateFailed(e);
-            mView.showProgressBar(false);
+            mView.showProgressBar(false, 0);
         }
     }
 

@@ -12,7 +12,7 @@ import cn.bmob.v3.exception.BmobException;
 public interface MyBookPageListContract {
 
     interface View extends NemoView<MyBookPageListContract.Presenter> {
-        void showProgressBar(boolean show);
+        void showProgressBar(boolean show, int stringId);
 
         void showPageSaveSuccess(Page page);
         void showPageSaveFailed(BmobException e);

@@ -44,7 +44,7 @@ public class PageLocalDataSource implements PageDataSource {
     }
 
     @Override
-    public void getPageTotal(Book book, TotalGetCallback callback) {
+    public void getBookPageTotal(Book book, TotalGetCallback callback) {
 
     }
 }

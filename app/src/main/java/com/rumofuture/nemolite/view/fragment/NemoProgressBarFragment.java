@@ -15,6 +15,8 @@ public class NemoProgressBarFragment extends DialogFragment {
 
     private static final String ARG_PROMPT = "com.rumofuture.nemolite.view.fragment.NemoProgressBarFragment.prompt";
 
+    private String mPrompt;
+
     public NemoProgressBarFragment() {
 
     }
@@ -30,13 +32,19 @@ public class NemoProgressBarFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        String prompt = (String) getArguments().getSerializable(ARG_PROMPT);
+        if (null == mPrompt) {
+            mPrompt = (String) getArguments().getSerializable(ARG_PROMPT);
+        }
         View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_nemo_progress_bar, null);
         TextView promptView = view.findViewById(R.id.prompt_view);
-        promptView.setText(prompt);
+        promptView.setText(mPrompt);
         return new AlertDialog.Builder(getActivity())
                 .setView(view)
                 .setCancelable(false)
                 .create();
+    }
+
+    public void setPrompt(String prompt) {
+        mPrompt = prompt;
     }
 }

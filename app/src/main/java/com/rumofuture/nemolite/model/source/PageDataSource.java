@@ -16,7 +16,7 @@ public interface PageDataSource {
     void deletePage(Page page, PageDeleteCallback callback);
     void updatePage(Page page, BmobFile newImage, final PageUpdateCallback callback);
     void getPageListByBook(Book book, int pageCode, PageListGetCallback callBack);
-    void getPageTotal(Book book, TotalGetCallback callback);
+    void getBookPageTotal(Book book, TotalGetCallback callback);
 
     interface PageSaveCallback {
         void onPageSaveSuccess(Page page);

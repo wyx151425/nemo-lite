@@ -52,7 +52,7 @@ public class PageRepository implements PageDataSource {
     }
 
     @Override
-    public void getPageTotal(Book book, TotalGetCallback callback) {
-        mPageRemoteDataSource.getPageTotal(book, callback);
+    public void getBookPageTotal(Book book, TotalGetCallback callback) {
+        mPageRemoteDataSource.getBookPageTotal(book, callback);
     }
 }

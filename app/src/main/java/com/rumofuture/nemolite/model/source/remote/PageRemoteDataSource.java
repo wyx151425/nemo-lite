@@ -133,7 +133,7 @@ public class PageRemoteDataSource implements PageDataSource {
     }
 
     @Override
-    public void getPageTotal(Book book, final TotalGetCallback callback) {
+    public void getBookPageTotal(Book book, final TotalGetCallback callback) {
         BmobQuery<Page> query = new BmobQuery<>();
         query.addWhereEqualTo(PageSchema.Table.Cols.BOOK, book);
         query.count(Page.class, new CountListener() {

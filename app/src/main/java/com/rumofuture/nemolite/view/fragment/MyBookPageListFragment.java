@@ -125,7 +125,7 @@ public class MyBookPageListFragment extends Fragment implements MyBookPageListCo
 
     @Override
     public void showPageSaveSuccess(Page page) {
-        Toast.makeText(getActivity(), R.string.prompt_save_success, Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), R.string.prompt_upload_success, Toast.LENGTH_LONG).show();
         mPageList.add(page);
         mPageListAdapter.notifyDataSetChanged();
         mPage = new Page();
@@ -134,7 +134,7 @@ public class MyBookPageListFragment extends Fragment implements MyBookPageListCo
 
     @Override
     public void showPageSaveFailed(BmobException e) {
-        Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), R.string.prompt_upload_failed, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -146,7 +146,7 @@ public class MyBookPageListFragment extends Fragment implements MyBookPageListCo
 
     @Override
     public void showPageDeleteFailed(BmobException e) {
-        Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), R.string.prompt_delete_failed, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -158,7 +158,7 @@ public class MyBookPageListFragment extends Fragment implements MyBookPageListCo
 
     @Override
     public void showPageUpdateFailed(BmobException e) {
-        Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), R.string.prompt_update_failed, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -177,7 +177,7 @@ public class MyBookPageListFragment extends Fragment implements MyBookPageListCo
         if (mSwipeRefreshLayout.isRefreshing()) {
             mSwipeRefreshLayout.setRefreshing(false);
         }
-        Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), R.string.prompt_load_failed, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -186,8 +186,9 @@ public class MyBookPageListFragment extends Fragment implements MyBookPageListCo
     }
 
     @Override
-    public void showProgressBar(boolean show) {
+    public void showProgressBar(boolean show, int stringId) {
         if (show) {
+            mProgressBar.setPrompt(getString(stringId));
             mProgressBar.show(getFragmentManager(), null);
         } else {
             mProgressBar.dismiss();
